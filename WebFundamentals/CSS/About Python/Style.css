@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+#Container{
+    width: 970px;
+    margin: 0px auto;
+    background-color: #245176;
+    color: white;
+}
+#Top-Screen{
+    padding: 15px;
+}
+#header img{
+    width: 375px;
+}
+#Right-Header{
+    display: inline-block;
+    margin-left: 240px;
+    text-align: center;
+    vertical-align: top;
+}
+#Right-Header a{
+    color: #dab700;
+}
+#Search{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #444444;
+    padding: 15px 7px 4px 10px;
+    margin-top: 5px;
+}
+#Search input{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid silver;
+}
+#Search button{
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    background-color: #245176;
+}
+#Top-Navigation{
+    width: 800px;
+    list-style: none;
+    background-color: #467ead;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 25px;
+    margin: 20px auto;
+}
+#Side-Navigation{
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 100px;
+    color: white;
+}
+#Side-Navigation li{
+    margin: 13px;
+}
+#Side-Navigation a{
+    color: white;
+}
+#Main-Content{
+    display: inline-block;
+    width: 600px;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 20px;
+}
+#Main-Content p{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+#Main-Content h3{
+    font-weight: lighter;
+    color: #ffe01c;
+    font-style: italic;
+    margin: 5x;
+}
+#Main-Content h4{
+    font-weight: normal;
+    margin: 15px;
+}
+#Content{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 160px;
+}
+#Content div{
+    width: 400px;
+    border-top: 4px solid #73a7d5;
+    color: black;
+    text-align: center;
+}
+#Content h4{
+    margin: 10px;
+}
+#Content p{
+    font-size: 14px;
+    width: 300px;
+    margin: 0px auto 5px auto;
+}
+#Content p a{
+    color: #8eb6d8;
+}
+#Content ul{
+    list-style: square;
+    margin-left: 75px;
+    width: 400px;
+}
+#Content li a{
+    margin-left: -125px;
+    text-decoration: none;
+    color: #8eb6d8;
+    font-size: 14px;
+}
+#footer{
+    text-align: center;
+    background: linear-gradient(#19587f, #79a0c5);
+    padding-top: 10px;
+    color: #8eb6d8;
+    width: 970px;
+    margin: 0px auto;
+}
+#footer ul{
+    list-style: none;
+    margin: 40px auto 20px auto;
+}
+#footer li{
+    display: inline;
+    margin: 20px;
+}
+#footer p{
+    font-size: 10px;
+    height: 20px;
+}
