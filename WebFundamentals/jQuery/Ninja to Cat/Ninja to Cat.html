@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ninja to Cat</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function() {
+          $('#ninja0').click(function() {
+            var src = $('#ninja0').attr('src');
+            if(src == 'ninja0.png') {
+                $('#ninja0').attr("src","cat0.png");
+            }
+            else if(src == "cat0.png") {
+                $('#ninja0').attr("src","ninja0.png");
+            }
+          });
+          $('#ninja1').click(function() {
+            var src = $('#ninja1').attr('src');
+            if(src == 'ninja1.png') {
+                $('#ninja1').attr("src","cat1.png");
+            }
+            else if(src == "cat1.png") {
+                $('#ninja1').attr("src","ninja1.png");
+            }
+          });
+          $('#ninja2').click(function() {
+            var src = $('#ninja2').attr('src');
+            if(src == 'ninja2.png') {
+                $('#ninja2').attr("src","cat2.png");
+            }
+            else if(src == "cat2.png") {
+                $('#ninja2').attr("src","ninja2.png");
+            }
+          });
+          $('#ninja3').click(function() {
+            var src = $('#ninja3').attr('src');
+            if(src == 'ninja3.png') {
+                $('#ninja3').attr("src","cat3.png");
+            }
+            else if(src == "cat3.png") {
+                $('#ninja3').attr("src","ninja3.png");
+            }
+          });
+          $('#ninja4').click(function() {
+            var src = $('#ninja4').attr('src');
+            if(src == 'ninja4.png') {
+                $('#ninja4').attr("src","cat4.png");
+            }
+            else if(src == "cat4.png") {
+                $('#ninja4').attr("src","ninja4.png");
+            }
+          });
+
+         });
+        </script>
+    </head>
+    <body>
+
+        <div class="container">
+                      <img id='ninja0' src="ninja0.png" alt="ninja">
+                      <img id='ninja1' src="ninja1.png" alt="ninja">
+                      <img id='ninja2' src="ninja2.png" alt="ninja">
+                      <img id='ninja3' src="ninja3.png" alt="ninja">
+                      <img id='ninja4' src="ninja4.png" alt="ninja">
+        </div>
+    </body>
+</html>

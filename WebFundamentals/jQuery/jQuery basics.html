@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>jQuery stuff</title>
+      <script type ="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type ="text/javascript">
+        $(document).ready(function(){
+          $('#header').click(function(){
+              $('h1').html('<h1>Lets get started!!</h1>')});
+          $('#closebutton').click(function(){
+              $('#advertisement').toggle();});
+          $('p').hide();
+          $('#navclick').click(function(){
+              $('p').slideToggle();});
+          $('#navclick').click(function(){
+              $('p').before('>>');});
+          $('#closebutton').click(function(){
+              $('h3').after("blah ");});
+          //code stuff
+        });
+        </script>
+   </head>
+   <body>
+        <div id="header"><h1>Hello everyone, click me</h1></div>
+         <div id="navigation">
+           <h2 id="navclick">Click for Navigation</h2>
+           <p>one</p>
+           <p>two</p>
+           <p>three</p>
+           <p>four</p>
+         </div>
+         <div id="main_content">
+            <button id= "closebutton">click me</button>
+            <div id="advertisement">
+              <h3>some information stuff!!</h3>
+            </div>
+         </div>
+   </body>
+</html>
