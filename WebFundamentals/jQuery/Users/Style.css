@@ -1,0 +1,14 @@
+
+table{
+      border: 2px solid black;
+}
+th{
+      padding-right: 20px;
+}
+td{
+      padding-right: : 20px;
+}
+form h1{
+      width: 300px;
+      border-bottom: 2px solid silver;
+}

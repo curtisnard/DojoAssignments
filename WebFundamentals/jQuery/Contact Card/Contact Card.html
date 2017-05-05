@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Contact Card</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#Submit").click(function(){
+          var First=$("#FirstName").val();
+          var Last=$("#LastName").val();
+          var Description=$("#Description").val();
+          $("#Contact_Cards").append("<div id='Card'><p>"+First+""+Last+"</p><p id='Flipside'>"+Description+"</p></div>");
+          $("#FirstName").val("");
+          $("#LastName").val("");
+          $("#Description").val("");
+          return false;
+        });
+        $(document).on('click','#Card',function(){
+          $(this).children().toggle();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="Container">
+      <div id="Input_Info">
+        <form action="">
+          First name: <input id="FirstName" type="text" name="First">
+          Last name: <input id="LastName" type="text" name="Last">
+          <br>
+          Description:<input id="Description" type="text" name="Description">
+          <input id="Submit" type="submit" value="Add User">
+        </form>
+      </div>
+      <div id="Contact_Cards">
+      </div>
+    </div>
+  </body>
+</html>

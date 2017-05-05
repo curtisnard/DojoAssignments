@@ -1,0 +1,17 @@
+#Flipside{
+    display: none;
+}
+input, textarea{
+    display: block;
+}
+#Input_Info, #Contact_Cards{
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+}
+#Card{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid black;
+}
