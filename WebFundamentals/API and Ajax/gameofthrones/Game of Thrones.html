@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Game of Thrones</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('img').click(function(){
+              var x = $(this).attr('house');
+              var url = "https://anapioficeandfire.com/api/houses/"+x;
+              $.get(url, function(res){
+                  var Info ='';
+                  Info += '<h1>'+res.name+'</h1>';
+                  Info += '<h3>Region: </h3><p>'+res.region+'</p>';
+                  Info += '<h3>Coat of Arms: </h3><p>'+res.coatOfArms+'</p>';
+                  Info += '<h3>Words: </h3><p>'+res.words+'</p>';
+                  Info += '<h3>Titles: </h3><ul>';
+                  for (var y = 0; y < res.titles.length; ++y)
+                  {
+                      Info += '<li>'+res.titles[y]+'</li>'
+                  }
+                  Info += '</ul><h3>Seats: </h3><ul>';
+                  for (var z = 0; z < res.seats.length; ++z)
+                  {
+                      Info += '<li>'+res.seats[z]+'</li>'
+                  }
+                  Info += '</ul>';
+                  $('#HouseInfo').html(Info);
+              }, "json");
+          });
+      });
+    </script>
+    <style>
+    #Container{
+        width: 1200px;
+    }
+      .HouseBanners{
+          display: inline-block;
+          text-align: center;
+          vertical-align: top;
+      }
+      .HouseBanners img{
+          width: 250px;
+          height: 150px;
+          margin: 15px;
+          border: 5px solid black;
+      }
+      #HouseInfo{
+          width: 1090px;
+          height: 500px;
+          border: 5px solid black;
+          margin: 15px;
+          display: inline-block;
+          padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Container">
+    <div class="HouseBanners"><img src="baratheon.png" house='17' alt="House Baratheon"><h2>House Baratheon</h2></div>
+    <div class="HouseBanners"><img src="lannister.jpg" house='229' alt="House Lannister"><h2>House Lannister</h2></div>
+    <div class="HouseBanners"><img src="stark.jpg" house='362' alt="House Stark"><h2>House Stark</h2></div>
+    <div class="HouseBanners"><img src="targaryen.jpg" house='378' alt="House Targaryen"><h2>House Targaryen</h2></div>
+    <div id="HouseInfo">
+
+    </div>
+  </div>
+  </body>
+</html>
