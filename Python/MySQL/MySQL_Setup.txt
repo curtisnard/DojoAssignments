@@ -1,0 +1,8 @@
+use twitter;
+select * from users;
+insert into users (first_name, last_name, birthday, created_at, updated_at) values ('Curtis', 'Nard', '1991-06-22', now(), now());
+insert into users (first_name, last_name, birthday, created_at, updated_at) values ('Curtis', 'Nard', '1991-06-22', now(), now());
+insert into users (first_name, last_name, birthday, created_at, updated_at) values ('Curtis', 'Nard', '1991-06-22', now(), now());
+delete from users where id = 8;
+update users set first_name = 'Yolanda' where id = 7;
+update users set birthday = '1991-12-30' where id = 7;
